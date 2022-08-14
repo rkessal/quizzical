@@ -13,12 +13,12 @@ body {
 }
 
 .App {
-  padding: 75px;
+  padding: 25px;
   display: flex;
   flex-direction: column;
   color: #293264;
   max-width: 1000px;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .app--footer {
@@ -39,6 +39,13 @@ body {
 
 .question--answers {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.question--answers > div {
+  min-width: 65px;
+  margin-right: 12px;
+  margin-bottom: 5px;
 }
 
 .question--answers-button {
@@ -47,11 +54,10 @@ body {
   border: solid #4D5B9E 1px;
   border-radius: 8px;
   padding: 5px 9px;
-  min-width: 65px;
+  width: 100%;
   font-weight: 100;
   font-size: 10px;
-  margin-right: 12px;
-  margin-bottom: 5px;
+  
 }
 
 .starter {
@@ -77,7 +83,8 @@ body {
 }
 
 .check-answers {
-  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
